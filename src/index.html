@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GFG</title>
+    <link href="./output.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-gray-100 text-gray-800 mx-16">
+
+    <!-- Navbar -->
+    <nav class="bg-gray-100 py-4">
+        <div class="container flex justify-between items-center">
+          <!-- LHS: Logo -->
+          <img src="/src/images/logo.png" alt="Logo" class="size-10 object-cover mx-4"> 
+      
+          <!-- Menu Icon (shown on mobile) -->
+          <div class="md:hidden">
+            <button id="menu-toggle">
+              <i class="ri-menu-3-fill text-2xl"></i>
+            </button>
+          </div>
+      
+          <!-- RHS: Links and Button (hidden on mobile, horizontal on desktop) -->
+          <div id="menu-items" class="hidden md:flex space-x-10 font-semibold">
+            <a href="#" class="text-black mt-2 hover:text-gray-800">Resources</a>
+            <a href="#" class="text-black mt-2 hover:text-gray-800">Products</a>
+            <a href="#" class="text-black mt-2 hover:text-gray-800">Developers</a>
+            <button class="bg-black text-white py-2 px-4 rounded-full hover:bg-white hover:text-black hover:border-black hover:border-solid">Open App</button>
+          </div>
+        </div>
+      
+        <!-- Mobile Menu (shown on mobile, column-wise) -->
+        <div id="mobile-menu" class="md:hidden hidden flex-col space-y-2 mt-4 px-4">
+          <a href="#" class="block text-black hover:text-gray-800">Resources</a>
+          <a href="#" class="block text-black hover:text-gray-800">Products</a>
+          <a href="#" class="block text-black hover:text-gray-800">Developers</a>
+          <button class="bg-black text-white py-2 px-4 rounded-full  hover:bg-white hover:text-black w-full text-left hover:border-black hover:border-solid">Open App</button>
+        </div>
+      </nav>
+      
+      <!-- Add this script for the toggle functionality -->
+      <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+      
+        menuToggle.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+      </script>
+      
+      
+
+    <!-- Header Section -->
+
+    <div class="pt-20 pl-6 md:pl-10"> <!-- pt-20 adds padding to account for the navbar height -->
+        <div class=" text-xs flex space-x-5 rounded-full bg-gray-200 w-full h-auto items-center justify-start pl-4 mb-5 md:space-x-5 md:w-1/2 2xl:space-x-5 2xl:w-1/2 ">
+            <h4 class="md:text-lg">Introducing an era of new and exciting game development </h4>
+
+            <div class="flex items-center space-x-2 mt-2 md:mt-0">
+                <p class="bg-gray-600 w-2 h-2 rounded-full"></p>
+                <h4 class="text-sm md:text-base text-gray-600">Read More</h4>
+                <i class="ri-arrow-right-line text-gray-600 text-lg"></i>
+              </div>
+        </div>
+        <h1 class="text-3xl md:text-6xl font-bold text-left text-gray-900 leading-tight">Access the full power of <br class="hidden md:inline"> Python Game Development.</h1>
+        <p class="mt-4 text-1xl text-left text-gray-600">The ultimate game dev workshop for Python enthusiasts. <br class="hidden md:inline"> Learn, create, and innovate with the most versatile pl.</p>
+        <button class="mt-6 px-6 py-3 bg-gray-100 text-black rounded-full border border-black border-solid hover:bg-black hover:text-white">
+            Get Started
+          </button>
+          <img src="/src/images/img1.png" alt="" class="w-full object-cover">
+
+           
+      </div>
+
+    <!-- Workshop Features Section -->
+    <section class="py-12 mx-16">
+        <h2 class="text-left text-3xl font-bold mb-8">Workshop Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 ">
+            <!-- Feature 1 -->
+              <div class="bg-gray-200 w-full h-72 md:h-80 flex flex-col justify-between">
+                  <img src="/src/images/img2.png" alt="Game Mechanics" class="w-full h-1/2 object-cover">
+                  <div class="p-4 text-center">
+                      <h3 class="text-lg font-semibold">Game Mechanics</h3>
+                      <p class="text-xs">Master physics, collision detection, AI, and game loops.</p>
+                  </div>
+              </div>
+              <!-- Feature 2 -->
+              <div class="bg-gray-200 w-full h-72 md:h-80 flex flex-col justify-between">
+                  <img src="/src/images/img3.png" alt="Visual Effects" class="w-full h-1/2 object-cover">
+                  <div class="p-4 text-center">
+                      <h3 class="text-lg font-semibold">Visual Effects</h3>
+                      <p class="text-xs">Create 2D/3D graphics and animations.</p>
+                  </div>
+              </div>
+              <!-- Feature 3 -->
+              <div class="bg-gray-200 w-full h-72 md:h-80 flex flex-col justify-between">
+                  <img src="/src/images/img4.png" alt="Game Balancing" class="w-full h-1/2 object-cover">
+                  <div class="p-4 text-center">
+                      <h3 class="text-lg font-semibold">Game Balancing</h3>
+                      <p class="text-xs">Master physics, collision detection, AI, and game loops.</p>
+                  </div>
+              </div>
+          
+          
+            <!-- Feature 4 -->
+            <div class="bg-gray-200 w-full h-72 md:h-80 flex flex-col justify-between">
+                <img src="/src/images/img5.png" alt="Cross-Platform Development" class="w-full h-1/2 object-cover">
+                <div class="p-4 text-center">
+                  <h3 class="text-xl font-semibold">Cross-Platform Development</h3>
+                <p class="text-xs">Master physics, collision detection, AI, and game loops.</p>
+                </div>
+              </div>
+                
+            </div>
+      
+    </section>
+
+    <!-- About pyHack -->
+    <div class="container mx-auto p-5">
+      <!-- Header Section -->
+      <div class="text-left mb-8">
+          <h1 class="text-4xl font-bold ">About PyHack</h1>
+          <p class="text-gray-600">PyHack is a dynamic, community-driven workshop designed to teach game development using Python.</p>
+      </div>
+
+      <!-- Main Section -->
+      <!-- <div class="flex flex-wrap">
+          
+          <div>
+              <img src="img6.png" alt="Main Image" class="w-auto h-96 rounded-lg">
+            </div>
+
+          
+          <div class="w-full md:w-6 flex flex-col p-4">
+             
+              <div class="mb-4">
+                <h1 class="font-bold">101%</h1>
+                  <p class="text-gray-600">Boost in python game dev skills</p>
+                  <img src="img7.png" alt="" class="w-36 h-48 rounded-lg">
+
+              </div>
+              <div>
+                <img src="img8.png" alt="" class=" p-4 w-full h-auto rounded-lg">
+            </div>
+            
+             
+          </div>
+          
+      </div> -->
+      <div class="flex flex-wrap">
+        <!-- Left Column (Image) -->
+        <div class="w-full md:w-1/2 p-4">
+          <img src="/src/images/img6.png" alt="Main Image" class="w-full h-auto rounded-lg object-cover">
+        </div>
+      
+        <!-- Right Column (Content) -->
+        <div class="w-full md:w-1/2 flex flex-col p-4">
+          <!-- Text and Smaller Image -->
+          <div class="mb-4">
+            <h1 class="font-bold text-2xl">101%</h1>
+            <p class="text-gray-600">Boost in python game dev skills</p>
+          </div>
+      
+          <!-- Full-width Bottom Image -->
+          <div>
+            <img src="/src/images/img8.png" alt="Full-width Bottom Image" class="w-full h-auto rounded-lg">
+          </div>
+        </div>
+      </div>
+      
+
+    
+      
+  </div>
+
+   <!-- FAQ Section -->
+<section class="bg-white py-12">
+    <h2 class="text-left text-2xl mb-8 font-bold pl-3">Frequently Asked Questions</h2>
+    
+    <!-- FAQ Item 1 -->
+    <div class="faq-item bg-gray-100 p-6 rounded-lg shadow-md mb-4 flex justify-between items-center">
+        <p class="font-bold text-gray-700">What is PyHack?</p>
+        <button class="text-gray-600 text-2xl font-bold focus:outline-none" onclick="toggleAnswer(this)">+</button>
+        <div class="hidden faq-answer mt-4 text-gray-700">PyHack is a platform offering resources and hands-on experience in Python-based game development.</div>
+    </div>
+
+    <!-- FAQ Item 2 -->
+    <div class="faq-item bg-gray-100 p-6 rounded-lg shadow-md mb-4 flex justify-between items-center">
+        <p class="font-bold text-gray-700">Where will the workshops be held?</p>
+        <button class="text-gray-600 text-2xl font-bold focus:outline-none" onclick="toggleAnswer(this)">+</button>
+        <div class="hidden faq-answer mt-4 text-gray-700">Workshop locations will be announced on the website or event pages.</div>
+    </div>
+
+    <!-- FAQ Item 3 -->
+    <div class="faq-item bg-gray-100 p-6 rounded-lg shadow-md mb-4 flex justify-between items-center">
+        <p class="font-bold text-gray-700">What will I learn at PyHack?</p>
+        <button class="text-gray-600 text-2xl font-bold focus:outline-none" onclick="toggleAnswer(this)">+</button>
+        <div class="hidden faq-answer mt-4 text-gray-700">You'll learn Python game development, new techniques, and collaborate with fellow developers.</div>
+    </div>
+
+    <!-- FAQ Item 4 -->
+    <div class="faq-item bg-gray-100 p-6 rounded-lg shadow-md mb-4 flex justify-between items-center">
+      <p class="font-bold text-gray-700">Do I need prior Python experience?</p>
+      <button class="text-gray-600 text-2xl font-bold focus:outline-none" onclick="toggleAnswer(this)">+</button>
+      <div class="hidden faq-answer mt-4 text-gray-700">No prior experience is required; PyHack welcomes all skill levels.      </div>
+  </div>
+</section>
+
+<!-- About section -->
+<div class="bg-gray-100 p-8 rounded-lg shadow-lg ">
+  <!-- Logo Section -->
+  <div class="flex flex-wrap justify-between items-center border-b pb-6 mb-6">
+    <img src="/src/images/logo.png" alt="PyHack Logo" class="w-32 h-auto">
+    <img src="/src/images/last.png" alt="" class="size-5 w-52 md:size-3 md:w-32 md:mt-10">
+    <nav class="hidden md:flex space-x-8">
+      <!-- This nav can remain empty if there are no links yet -->
+    </nav>
+  </div>
+
+  <!-- Main Content Section -->
+  <div class="flex flex-wrap md:justify-between">
+    <!-- Left Column (Description & Social Icons) -->
+    <div class="w-full md:w-1/2 mb-6 md:mb-0">
+      <p class="text-gray-600 mb-4 md:mr-8">
+        PyHack provides a wide range of resources and hands-on experience to help you
+        master Python-based game development. Explore new techniques, share your creations,
+        and collaborate with fellow developers. Whether you're looking to build indie games
+        or start a career in the gaming industry, PyHack is the place to begin.
+      </p>
+      
+      <!-- Social Icons -->
+      <div class="flex space-x-4">
+        <a href="#" class="text-gray-600 hover:text-blue-500">
+          <i class="ri-instagram-line w-6 h-6"></i> 
+        </a>
+        <a href="#" class="text-gray-600 hover:text-blue-500">
+          <i class="ri-twitter-x-line w-6 h-6"></i>
+
+        </a>
+        <a href="#" class="text-gray-600 hover:text-blue-500">
+          <i class="ri-discord-fill w-6 h-6"></i> 
+
+        </a>
+        <a href="#" class="text-gray-600 hover:text-blue-500">
+          <i class="ri-github-fill w-6 h-6"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Column (Links) -->
+    <div class="w-full md:w-1/2 mt-8 md:mt-0 flex justify-between">
+      <div>
+        <h3 class="font-semibold text-gray-700 mb-4">Resources</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Brand</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">FAQ</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Help & Support</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Governance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-700 mb-4">Developers</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Technical Paper</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Security</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Game Design</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold text-gray-700 mb-4">Company</h3>
+        <ul class="space-y-2">
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Privacy Policy</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Terms of Use</a></li>
+          <li><a href="#" class="text-gray-600 hover:text-blue-500">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+function toggleAnswer(button) {
+    const answer = button.nextElementSibling;  // Get the related answer div
+    const isVisible = !answer.classList.contains('hidden');  // Check if answer is already visible
+
+    // Close all other answers
+    const allAnswers = document.querySelectorAll('.faq-answer');
+    const allButtons = document.querySelectorAll('.faq-button');
+    
+    allAnswers.forEach(ans => ans.classList.add('hidden'));  // Hide all answers
+    allButtons.forEach(btn => btn.textContent = '+');  // Reset all buttons to "+"
+
+    // Toggle the clicked answer visibility
+    if (!isVisible) {
+        answer.classList.remove('hidden');  // Show the clicked answer
+        button.textContent = '-';  // Change button to "-"
+    }
+}
+</script>
+
+</body>
+
+</html>
+
+
+
+<!-- last box chya khalchya rangiberangi lines sathi 
+<div class="space-y-2">
+    <div class="h-2 w-full bg-gradient-to-r from-[#39D1F9] via-[#FFB400] via-[#00827B] via-[#008AFF] via-[#FF3200] to-[#9896FF] opacity-100"></div>
+    
+    <div class="h-2 w-full bg-gradient-to-r from-[#39D1F9] via-[#FFB400] via-[#00827B] via-[#008AFF] via-[#FF3200] to-[#9896FF] opacity-75"></div>
+    
+    <div class="h-2 w-full bg-gradient-to-r from-[#39D1F9] via-[#FFB400] via-[#00827B] via-[#008AFF] via-[#FF3200] to-[#9896FF] opacity-50"></div>
+  </div>
+   -->
+ 
+   
